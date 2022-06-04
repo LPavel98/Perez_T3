@@ -1,0 +1,58 @@
+﻿<form method="post" action="/veterinaria/guardar">
+
+    <label>Fecha Registro</label>
+    <input type="date" name="FechaRegistro"/>
+    <br/>
+    <label>Nombre de la mascota</label>
+    <input type="text" name="Nombre"/>
+    <br/>
+    <label>Fecha de nacimiento</label>
+    <input type="date" name="FechaNacimiento"/>
+    <br/>
+    
+    <div class="row-mb-3">
+        <label for="Sexo">Sexo</label>
+        <select class="form-select" name="Sexo" id="Sexo">
+            <option value="">Seleccionar Sexo</option>
+            <option value="Hembra">Hembra</option>
+            <option value="Macho">Macho</option>
+            <br/>
+        </select>
+        @Html.ValidationMessage("Sexo")
+    </div>
+    
+    
+    <div class="row-mb-3">
+        <label for="Especie">Especie</label>
+        <select class="form-select" name="Especie" id="Especie">
+            <option value="">Seleccionar Especie</option>
+            <option value="Especie1">Especie1</option>
+            <option value="Especie2">Especie2</option>
+            <option value="Especie3">Especie3</option>
+            <br/>
+        </select>
+        @Html.ValidationMessage("Especie")
+    </div>
+    
+    <label>Raza</label>
+    <input type="text" name="Raza"/>
+    <br/>
+    <label>Tamaño</label>
+    <input type="text" name="Tamanio"/>
+    <br/>
+    <label>Datos particulares</label>
+    <input type="text" name="Datos"/>
+    <br/>
+    <label>Nombres del dueño</label>
+    <input type="text" name="NombreDuenio"/>
+    <br/>
+    <label>Telefono</label>
+    <input type="text" name="Telefono"/>
+    <br/>
+    <label>Email</label>
+    <input type="text" name="Email"/>
+    <br/>
+    <button> Crear </button>
+    
+   
+</form>

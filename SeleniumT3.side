@@ -1,0 +1,224 @@
+{
+  "id": "6af409f5-ee46-4dfe-9a89-74201b753810",
+  "version": "2.0",
+  "name": "SeleniumT3",
+  "url": "https://localhost:7218/",
+  "tests": [{
+    "id": "2cf3a939-e9ab-447d-a026-f59a12033994",
+    "name": "RegistroCorrecto",
+    "commands": [{
+      "id": "5814c90b-8842-4e46-9541-73a111ca7134",
+      "comment": "",
+      "command": "open",
+      "target": "veterinaria/index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75e78ad7-f94c-459a-ad3e-7e6a4c33e175",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Nuevo Registro",
+      "targets": [
+        ["linkText=Nuevo Registro", "linkText"],
+        ["css=.pb-3 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Nuevo Registro')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/veterinaria/create?Id=')]", "xpath:href"],
+        ["xpath=//main/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Nuevo Registro')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f78ca47-263e-4d08-9aaa-087216d4a936",
+      "comment": "",
+      "command": "type",
+      "target": "name=FechaRegistro",
+      "targets": [
+        ["name=FechaRegistro", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='FechaRegistro']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2022-06-01"
+    }, {
+      "id": "202acef3-9eb8-4b9c-becd-8544f426ac9c",
+      "comment": "",
+      "command": "type",
+      "target": "name=Nombre",
+      "targets": [
+        ["name=Nombre", "name"],
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@name='Nombre']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Thor"
+    }, {
+      "id": "42173245-1697-41e0-9ca6-afbdfee4cc90",
+      "comment": "",
+      "command": "type",
+      "target": "name=FechaNacimiento",
+      "targets": [
+        ["name=FechaNacimiento", "name"],
+        ["css=input:nth-child(8)", "css:finder"],
+        ["xpath=//input[@name='FechaNacimiento']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "2021-12-30"
+    }, {
+      "id": "207e3571-5278-453b-a75a-f96aeed737d2",
+      "comment": "",
+      "command": "select",
+      "target": "id=Sexo",
+      "targets": [],
+      "value": "label=Hembra"
+    }, {
+      "id": "da14b99c-38c4-48b3-a060-e64448521d0c",
+      "comment": "",
+      "command": "select",
+      "target": "id=Especie",
+      "targets": [],
+      "value": "label=Especie1"
+    }, {
+      "id": "069810ec-4bcf-4bb0-a6ba-efce6f3772f9",
+      "comment": "",
+      "command": "type",
+      "target": "name=Raza",
+      "targets": [
+        ["name=Raza", "name"],
+        ["css=input:nth-child(13)", "css:finder"],
+        ["xpath=//input[@name='Raza']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "Raza1"
+    }, {
+      "id": "8c232aed-899f-4c82-8cd3-e3ed63a79353",
+      "comment": "",
+      "command": "type",
+      "target": "name=Tamanio",
+      "targets": [
+        ["name=Tamanio", "name"],
+        ["css=input:nth-child(16)", "css:finder"],
+        ["xpath=//input[@name='Tamanio']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "0.5m"
+    }, {
+      "id": "ff822433-c49f-4a11-8aa4-a2a7d63ff785",
+      "comment": "",
+      "command": "type",
+      "target": "name=Datos",
+      "targets": [
+        ["name=Datos", "name"],
+        ["css=input:nth-child(19)", "css:finder"],
+        ["xpath=//input[@name='Datos']", "xpath:attributes"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": "datos1"
+    }, {
+      "id": "748aa71b-fdb5-478c-823f-3f640858f13f",
+      "comment": "",
+      "command": "type",
+      "target": "name=NombreDuenio",
+      "targets": [
+        ["name=NombreDuenio", "name"],
+        ["css=input:nth-child(22)", "css:finder"],
+        ["xpath=//input[@name='NombreDuenio']", "xpath:attributes"],
+        ["xpath=//input[7]", "xpath:position"]
+      ],
+      "value": "Pedro"
+    }, {
+      "id": "8d1fc7bc-313d-484e-b221-af1b72412001",
+      "comment": "",
+      "command": "type",
+      "target": "name=Telefono",
+      "targets": [
+        ["name=Telefono", "name"],
+        ["css=input:nth-child(25)", "css:finder"],
+        ["xpath=//input[@name='Telefono']", "xpath:attributes"],
+        ["xpath=//input[8]", "xpath:position"]
+      ],
+      "value": "983746253"
+    }, {
+      "id": "d9d06398-4f0f-42a6-a093-8ac327b0924a",
+      "comment": "",
+      "command": "type",
+      "target": "name=Email",
+      "targets": [
+        ["name=Email", "name"],
+        ["css=input:nth-child(28)", "css:finder"],
+        ["xpath=//input[@name='Email']", "xpath:attributes"],
+        ["xpath=//input[9]", "xpath:position"]
+      ],
+      "value": "pedro@gmail.com"
+    }, {
+      "id": "0a44666f-1b0f-433e-9826-facd46aa3b1d",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(30)",
+      "targets": [
+        ["css=button:nth-child(30)", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Crear')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "03853e31-3e2c-4e2f-b67f-8a50ead57f81",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=NuevoRegistro",
+      "targets": [
+        ["id=NuevoRegistro", "id"],
+        ["linkText=Nuevo Registro", "linkText"],
+        ["css=#NuevoRegistro", "css:finder"],
+        ["xpath=//a[contains(text(),'Nuevo Registro')]", "xpath:link"],
+        ["xpath=//a[@id='NuevoRegistro']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/veterinaria/create?Id=')]", "xpath:href"],
+        ["xpath=//main/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Nuevo Registro')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f3a43c9d-cf22-4837-a174-fbc1d13fc1ce",
+    "name": "Eliminar",
+    "commands": [{
+      "id": "c3f656ff-fc1d-4175-90b7-2a73e68019ed",
+      "comment": "",
+      "command": "open",
+      "target": "veterinaria/index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "277f69b0-bc14-45db-8e99-25de14aebc39",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(5) a:nth-child(2)",
+      "targets": [
+        ["css=tr:nth-child(5) a:nth-child(2)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Eliminar')])[5]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/veterinaria/delete?Id=12')]", "xpath:href"],
+        ["xpath=//tr[5]/td[12]/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d400488a-a1c9-46f6-993b-9fa5cb9f0fe6",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=tr:nth-child(6) > td:nth-child(11)",
+      "targets": [
+        ["css=tr:nth-child(6) > td:nth-child(11)", "css:finder"],
+        ["xpath=//tr[6]/td[11]", "xpath:position"]
+      ],
+      "value": "pedro@gmail.com"
+    }]
+  }],
+  "suites": [{
+    "id": "51046959-c664-45d3-9e67-1f324416e8d4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2cf3a939-e9ab-447d-a026-f59a12033994"]
+  }],
+  "urls": ["https://localhost:7218/"],
+  "plugins": []
+}

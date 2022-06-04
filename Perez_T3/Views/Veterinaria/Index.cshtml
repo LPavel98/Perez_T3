@@ -1,0 +1,44 @@
+﻿<a href="/veterinaria/create?Id=@ViewBag.Id" id="NuevoRegistro">Nuevo Registro</a>
+
+<table class="table">
+    <tr>
+        
+        <th>Fecha Registro</th>
+        <th>Nombre de la mascota</th>
+        <th>Fecha de nacimiento</th>
+        <th>Sexo</th>
+        <th>Especie</th>
+        <th>Raza</th>
+        <th>Tamaño</th>
+        <th>Datos particulares</th>
+        <th>Nombres del dueño</th>
+        <th>Telefono</th>
+        <th>Email</th>
+        <th></th>
+    </tr>
+    
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            
+            <td>@item.FechaRegistro</td>
+            <td>@item.Nombre</td>
+            <td>@item.FechaNacimiento</td>
+            <td>@item.Sexo</td>
+            <td>@item.Especie</td>
+            <td>@item.Raza</td>
+            <td>@item.Tamanio</td>
+            <td>@item.Datos</td>
+            <td>@item.NombreDuenio</td>
+            <td>@item.Telefono</td>
+            <td>@item.Email</td>
+            <td>
+                <a href="/veterinaria/editar?Id=@item.Id">Editar</a>
+                <a href="/veterinaria/delete?Id=@item.Id">Eliminar</a>
+            </td>
+        </tr>
+    }
+    
+    </tbody>
+</table>
